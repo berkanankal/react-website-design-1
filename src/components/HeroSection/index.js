@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import Video from "../../videos/video.mp4";
 import {
   HeroContainer,
   HeroBg,
@@ -10,34 +11,40 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
-import Video from "../../videos/video.mp4";
 import { Button } from "../ButtonElement";
 
-const HeroSection = () => {
+const Hero = () => {
   const [hover, setHover] = useState(false);
 
-  const onHover = () => setHover(!hover);
+  const onHover = () => {
+    setHover(!hover);
+  };
 
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
-        <VideoBg autoPlay src={Video} loop muted type="video/mp4" />
+        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Lorem ipsum dolor sit amet.</HeroH1>
+        <HeroH1>Lorem ipsum dolor sit.</HeroH1>
         <HeroP>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          aperiam cum, excepturi non eius necessitatibus?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          eius.
         </HeroP>
         <HeroBtnWrapper>
           <Button
             to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            dark
-            primary
+            primary="true"
+            dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
@@ -45,4 +52,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;

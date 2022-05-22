@@ -9,7 +9,7 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: "Lorem, ipsum.",
   headline:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, cupiditate?",
+    "Lorem ipsum dolor sit amet consectetur.",
   description:
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia libero, officiis eum dolore qui veritatis consectetur odio quibusdam error saepe, deleniti iure, velit corporis nesciunt.",
   buttonLabel: "Get started",
@@ -26,10 +26,10 @@ export const homeObjTwo = {
   lightBg: true,
   lightText: false,
   lighttextDesc: false,
-  topLine: "Unlimited Access",
-  headline: "Login to your account at any time",
+  topLine: "Lorem, ipsum.",
+  headline: "Lorem ipsum dolor sit amet consectetur.",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions whitout getting charged any fees.",
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia libero, officiis eum dolore qui veritatis consectetur odio quibusdam error saepe, deleniti iure, velit corporis nesciunt.",
   buttonLabel: "Learn More",
   imgStart: true,
   img: svg4,
@@ -44,10 +44,10 @@ export const homeObjThree = {
   lightBg: true,
   lightText: false,
   lighttextDesc: false,
-  topLine: "Premium Bank",
-  headline: "Creating an account is extremely easy",
+  topLine: "Lorem, ipsum.",
+  headline: "Lorem ipsum dolor sit amet consectetur.",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions whitout getting charged any fees.",
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia libero, officiis eum dolore qui veritatis consectetur odio quibusdam error saepe, deleniti iure, velit corporis nesciunt.",
   buttonLabel: "Start Now",
   imgStart: false,
   img: svg3,
